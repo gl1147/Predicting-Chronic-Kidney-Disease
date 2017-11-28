@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     reduced copy
+Instances:    400
+Attributes:   19
+              bp
+              sg
+              al
+              su
+              pc
+              bgr
+              bu
+              sc
+              sod
+              pot
+              hemo
+              pcv
+              rc
+              htn
+              dm
+              appet
+              pe
+              ane
+              classification
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+hemo <= 12.9
+|   sc <= 1.1
+|   |   sod <= 143
+|   |   |   sg <= 1.017408: ckd (19.0)
+|   |   |   sg > 1.017408
+|   |   |   |   sc <= 1: ckd (9.0/1.0)
+|   |   |   |   sc > 1: notckd (2.0)
+|   |   sod > 143: notckd (3.0)
+|   sc > 1.1: ckd (198.0)
+hemo > 12.9
+|   sg <= 1.015: ckd (22.0)
+|   sg > 1.015
+|   |   htn = yes: ckd (3.0)
+|   |   htn = no: notckd (144.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         399               99.75   %
+Incorrectly Classified Instances         1                0.25   %
+Kappa statistic                          0.9947
+Mean absolute error                      0.0044
+Root mean squared error                  0.0471
+Relative absolute error                  0.9478 %
+Root relative squared error              9.7373 %
+Total Number of Instances              400     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.007    0.996      1.000    0.998      0.995    1.000     1.000     ckd
+                 0.993    0.000    1.000      0.993    0.997      0.995    1.000     1.000     notckd
+Weighted Avg.    0.998    0.004    0.998      0.998    0.997      0.995    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 250   0 |   a = ckd
+   1 149 |   b = notckd
+

@@ -1,0 +1,74 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     fill
+Instances:    400
+Attributes:   26
+              id
+              age
+              bp
+              sg
+              al
+              su
+              rbc
+              pc
+              pcc
+              ba
+              bgr
+              bu
+              sc
+              sod
+              pot
+              hemo
+              pcv
+              wc
+              rc
+              htn
+              dm
+              cad
+              appet
+              pe
+              ane
+              classification
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 26 classification):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.9544    1 id
+ 0.6523   16 hemo
+ 0.6079   17 pcv
+ 0.5634   19 rc
+ 0.5499    4 sg
+ 0.4941   13 sc
+ 0.4652    5 al
+ 0.3428   14 sod
+ 0.3378   20 htn
+ 0.3318   15 pot
+ 0.3064   21 dm
+ 0.2866   12 bu
+ 0.2826   11 bgr
+ 0.237    18 wc
+ 0.1659    3 bp
+ 0.1613   23 appet
+ 0.1476   24 pe
+ 0.1476    8 pc
+ 0.115     6 su
+ 0.1129   25 ane
+ 0.1101    2 age
+ 0.0863    7 rbc
+ 0.0765    9 pcc
+ 0.061    22 cad
+ 0.0387   10 ba
+
+Selected attributes: 1,16,17,19,4,13,5,14,20,15,21,12,11,18,3,23,24,8,6,25,2,7,9,22,10 : 25
+
